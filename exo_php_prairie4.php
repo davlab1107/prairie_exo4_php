@@ -1,18 +1,15 @@
 <?php
-for ($i = 0; $i <100;$i++){
-  echo $i;
+for ($i = 1; $i <100;$i++){
 }
-if($i%3 == 0)
-{
-echo "FIZZ";
-}
-if($i%5 == 0)
-{
-echo "BUZZ";
-}
-if($i%3 == 0 AND $i%5 == 0)
-{
+if($i%3 == 0 && $i%5 == 0){
 echo "FIZZBUZZ";
 }
-
+elseif($i%3 == 0){
+echo "FIZZ";
+}
+elseif($i%5 == 0){
+echo "BUZZ";
+}
+else { echo $i;
+}
 ?>
